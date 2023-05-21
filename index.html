@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<div class="exercise1">
+		<h1 style="text-transform: capitalize; text-decoration: underline;">quản lý tuyển sinh</h1>
+		<input id="benchmark" type="text" placeholder="Nhập điểm chuẩn">
+		<input id="sub1" type="text" placeholder="Nhập điểm môn 1">
+		<input id="sub2" type="text" placeholder="Nhập điểm môn 2">
+		<input id="sub3" type="text" placeholder="Nhập điểm môn 3">
+		<select name="area" id="area">
+			<option value="khuvuc">Chọn khu vực</option>
+			<option value="A">A</option>
+			<option value="B">B</option>
+			<option value="C">C</option>
+			<option value="X">Không</option>
+		</select>
+		<select name="type" id="type">
+			<option value="doituong">Chọn đối tượng</option>
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="0">Không</option>
+		</select>
+		<button id="btnSubmit">Kiểm tra</button>
+		<p>Tổng điểm: <span id="totalGrade"></span></p>
+		<P>Kết quả: <span id="result"></span></P>
+	</div>
+
+	<div class="exercise2">
+		<h1 style="text-transform: capitalize;text-decoration: underline;">tính tiền điện</h1>
+		<input id="nameUser" type="text" placeholder="Nhập tên người dùng">
+		<input id="kwNumber" type="text" placeholder="Nhập số KW">
+		<button id="btnSubmit2">Tính tiền</button>
+		<p>Số tiền của quý khách <span id="user" style="text-transform: capitalize;"></span> là: <span id="totalMoney"></span></p>
+	</div>
+
+	<div class="exercise3">
+	<h1 style="text-decoration: underline;text-transform: capitalize;">tính thuế thu nhập cá nhân</h1>
+	<input id="incomePerYear" type="text" placeholder="Tổng thu nhập năm"> <span>Đơn vị: triệu đồng</span>
+	<input id="numberPerson" type="text" placeholder="Nhập số người phụ thuộc">
+	<button id="btnSubmit3">Tính thuế</button>
+	<p>Thuế thu nhập của quý khách: <span id="tax"></span></p>
+	</div>
+
+	<div class="exercise4">
+		<h1 style="text-decoration: underline;text-transform: capitalize;">tính tiền cáp</h1>	
+		<input id="IDCustomer" type="text" placeholder="Nhập mã khách hàng">
+		<select id="typeCustom">
+			<option value="type">Chọn loại hình khách hàng</option>
+			<option value="citizen">Nhà dân</option>
+			<option value="company">Doanh nghiệp</option>
+		</select>
+		<input id="connectNumber" type="text" placeholder="Nhập số kết nối" style="display: none;">
+		<input id="channelNumber" type="text" placeholder="Nhập số kênh">
+		<button id="btnSubmit4">Tính tiền cáp</button>
+		<p>Số tiền cáp của quý khách <span id="ID"></span> là: <span id="total4"></span></p>
+	</div>
+
+
+
+	<script src="./index.js"></script>
+</body>
+</html>
